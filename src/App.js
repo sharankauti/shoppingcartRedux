@@ -9,11 +9,11 @@ import CardDetails from './componets/cardDetails'
 
 function App() {
   return (
-    <div className="container-fluid">
+    <div className="mainWrap">
       <Header/>
       <Routes>
         <Route path='/' element={<Card/>}></Route>
-        <Route path='/cart' element={<CardDetails/>}></Route>
+        <Route path='/cart/:id' element={<CardDetails/>}></Route>
       </Routes>
     </div>
   );
